@@ -14,7 +14,26 @@
 		566DCCF01EDD6E960065D0DB /* weatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566DCCEF1EDD6E960065D0DB /* weatherVC.swift */; };
 		566DCCF31EDD6F2F0065D0DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566DCCF11EDD6F2F0065D0DB /* Constants.swift */; };
 		566DCCF41EDD6F2F0065D0DB /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566DCCF21EDD6F2F0065D0DB /* CurrentWeather.swift */; };
+		566DCCF71EDD84570065D0DB /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566DCCF51EDD84570065D0DB /* Networking.framework */; };
+		566DCCF81EDD84580065D0DB /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 566DCCF51EDD84570065D0DB /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		566DCCF91EDD84580065D0DB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566DCCF61EDD84570065D0DB /* SwiftyJSON.framework */; };
+		566DCCFA1EDD84580065D0DB /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 566DCCF61EDD84570065D0DB /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		566DCCFB1EDD84580065D0DB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				566DCCFA1EDD84580065D0DB /* SwiftyJSON.framework in Embed Frameworks */,
+				566DCCF81EDD84580065D0DB /* Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		566DCCD71EDD6D3D0065D0DB /* RhinyShiny2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhinyShiny2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +45,8 @@
 		566DCCEF1EDD6E960065D0DB /* weatherVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = weatherVC.swift; path = "../../../../Google Drive/IosProjects/RhinyShiny/RhinyShiny/weatherVC.swift"; sourceTree = "<group>"; };
 		566DCCF11EDD6F2F0065D0DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "../../../../Google Drive/IosProjects/RhinyShiny/RhinyShiny/Constants.swift"; sourceTree = "<group>"; };
 		566DCCF21EDD6F2F0065D0DB /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentWeather.swift; path = "../../../../Google Drive/IosProjects/RhinyShiny/RhinyShiny/CurrentWeather.swift"; sourceTree = "<group>"; };
+		566DCCF51EDD84570065D0DB /* Networking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Networking.framework; path = Carthage/Build/iOS/Networking.framework; sourceTree = "<group>"; };
+		566DCCF61EDD84570065D0DB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566DCCF91EDD84580065D0DB /* SwiftyJSON.framework in Frameworks */,
+				566DCCF71EDD84570065D0DB /* Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +67,8 @@
 			children = (
 				566DCCD91EDD6D3D0065D0DB /* RhinyShiny2 */,
 				566DCCD81EDD6D3D0065D0DB /* Products */,
+				566DCCF51EDD84570065D0DB /* Networking.framework */,
+				566DCCF61EDD84570065D0DB /* SwiftyJSON.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +105,8 @@
 				566DCCD31EDD6D3D0065D0DB /* Sources */,
 				566DCCD41EDD6D3D0065D0DB /* Frameworks */,
 				566DCCD51EDD6D3D0065D0DB /* Resources */,
+				566DCCFB1EDD84580065D0DB /* Embed Frameworks */,
+				566DCCFC1EDD85310065D0DB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		566DCCFC1EDD85310065D0DB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Networking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		566DCCD31EDD6D3D0065D0DB /* Sources */ = {
@@ -268,6 +313,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RhinyShiny2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -281,6 +330,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RhinyShiny2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
