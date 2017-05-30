@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		564CA49C1EDD984A00100132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564CA49A1EDD984A00100132 /* Main.storyboard */; };
 		566DCCDB1EDD6D3D0065D0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566DCCDA1EDD6D3D0065D0DB /* AppDelegate.swift */; };
 		566DCCE21EDD6D3D0065D0DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566DCCE11EDD6D3D0065D0DB /* Assets.xcassets */; };
 		566DCCE51EDD6D3D0065D0DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566DCCE31EDD6D3D0065D0DB /* LaunchScreen.storyboard */; };
-		566DCCEE1EDD6E4E0065D0DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566DCCEC1EDD6E4E0065D0DB /* Main.storyboard */; };
 		566DCCF01EDD6E960065D0DB /* weatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566DCCEF1EDD6E960065D0DB /* weatherVC.swift */; };
 		566DCCF31EDD6F2F0065D0DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566DCCF11EDD6F2F0065D0DB /* Constants.swift */; };
 		566DCCF41EDD6F2F0065D0DB /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566DCCF21EDD6F2F0065D0DB /* CurrentWeather.swift */; };
@@ -36,15 +36,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		564CA49B1EDD984A00100132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		566DCCD71EDD6D3D0065D0DB /* RhinyShiny2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhinyShiny2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566DCCDA1EDD6D3D0065D0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		566DCCE11EDD6D3D0065D0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		566DCCE41EDD6D3D0065D0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		566DCCE61EDD6D3D0065D0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		566DCCED1EDD6E4E0065D0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Google Drive/IosProjects/RhinyShiny/RhinyShiny/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		566DCCEF1EDD6E960065D0DB /* weatherVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = weatherVC.swift; path = "../../../../Google Drive/IosProjects/RhinyShiny/RhinyShiny/weatherVC.swift"; sourceTree = "<group>"; };
-		566DCCF11EDD6F2F0065D0DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "../../../../Google Drive/IosProjects/RhinyShiny/RhinyShiny/Constants.swift"; sourceTree = "<group>"; };
-		566DCCF21EDD6F2F0065D0DB /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentWeather.swift; path = "../../../../Google Drive/IosProjects/RhinyShiny/RhinyShiny/CurrentWeather.swift"; sourceTree = "<group>"; };
+		566DCCEF1EDD6E960065D0DB /* weatherVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherVC.swift; sourceTree = "<group>"; };
+		566DCCF11EDD6F2F0065D0DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		566DCCF21EDD6F2F0065D0DB /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		566DCCF51EDD84570065D0DB /* Networking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Networking.framework; path = Carthage/Build/iOS/Networking.framework; sourceTree = "<group>"; };
 		566DCCF61EDD84570065D0DB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +88,7 @@
 				566DCCEF1EDD6E960065D0DB /* weatherVC.swift */,
 				566DCCDA1EDD6D3D0065D0DB /* AppDelegate.swift */,
 				566DCCE11EDD6D3D0065D0DB /* Assets.xcassets */,
-				566DCCEC1EDD6E4E0065D0DB /* Main.storyboard */,
+				564CA49A1EDD984A00100132 /* Main.storyboard */,
 				566DCCE31EDD6D3D0065D0DB /* LaunchScreen.storyboard */,
 				566DCCE61EDD6D3D0065D0DB /* Info.plist */,
 			);
@@ -156,7 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				566DCCEE1EDD6E4E0065D0DB /* Main.storyboard in Resources */,
+				564CA49C1EDD984A00100132 /* Main.storyboard in Resources */,
 				566DCCE51EDD6D3D0065D0DB /* LaunchScreen.storyboard in Resources */,
 				566DCCE21EDD6D3D0065D0DB /* Assets.xcassets in Resources */,
 			);
@@ -197,20 +197,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		564CA49A1EDD984A00100132 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				564CA49B1EDD984A00100132 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		566DCCE31EDD6D3D0065D0DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				566DCCE41EDD6D3D0065D0DB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		566DCCEC1EDD6E4E0065D0DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				566DCCED1EDD6E4E0065D0DB /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -362,6 +362,7 @@
 				566DCCEB1EDD6D3D0065D0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
