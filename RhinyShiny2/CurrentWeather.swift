@@ -56,7 +56,7 @@ class CurrentWeather{
                             
                             let humidity=main["humidity"] as! Int
                             print("humidity=\(humidity)")
-                            print("source control added")
+                            print("source successfully")
                             print("Checked out")
                         }
                         
