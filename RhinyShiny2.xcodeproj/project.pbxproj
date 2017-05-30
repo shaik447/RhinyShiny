@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		564CA49C1EDD984A00100132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564CA49A1EDD984A00100132 /* Main.storyboard */; };
+		564CA49E1EDD9A8300100132 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564CA49D1EDD9A8300100132 /* PartyRock.swift */; };
 		566DCCDB1EDD6D3D0065D0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566DCCDA1EDD6D3D0065D0DB /* AppDelegate.swift */; };
 		566DCCE21EDD6D3D0065D0DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566DCCE11EDD6D3D0065D0DB /* Assets.xcassets */; };
 		566DCCE51EDD6D3D0065D0DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566DCCE31EDD6D3D0065D0DB /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		564CA49B1EDD984A00100132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		564CA49D1EDD9A8300100132 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 		566DCCD71EDD6D3D0065D0DB /* RhinyShiny2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhinyShiny2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566DCCDA1EDD6D3D0065D0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		566DCCE11EDD6D3D0065D0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		566DCCD91EDD6D3D0065D0DB /* RhinyShiny2 */ = {
 			isa = PBXGroup;
 			children = (
+				564CA49D1EDD9A8300100132 /* PartyRock.swift */,
 				566DCCF11EDD6F2F0065D0DB /* Constants.swift */,
 				566DCCF21EDD6F2F0065D0DB /* CurrentWeather.swift */,
 				566DCCEF1EDD6E960065D0DB /* weatherVC.swift */,
@@ -189,6 +192,7 @@
 			files = (
 				566DCCDB1EDD6D3D0065D0DB /* AppDelegate.swift in Sources */,
 				566DCCF01EDD6E960065D0DB /* weatherVC.swift in Sources */,
+				564CA49E1EDD9A8300100132 /* PartyRock.swift in Sources */,
 				566DCCF41EDD6F2F0065D0DB /* CurrentWeather.swift in Sources */,
 				566DCCF31EDD6F2F0065D0DB /* Constants.swift in Sources */,
 			);
