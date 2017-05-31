@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Networking
 
 class weatherVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
@@ -18,6 +19,8 @@ class weatherVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     let currentweather=CurrentWeather()
+    var forecasts=[Forecast]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate=self
@@ -32,7 +35,37 @@ class weatherVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             print("completed")
             self.updateMainUI()
         }
+        downloadForecastData {
+            print("forecst completed")
+        }
+       
     }
+    
+    func downloadForecastData(Completed: @escaping DownloadComplete) {
+        let networking = Networking(baseURL: FORECAST_URL)
+        networking.get("get", completion: {result in
+            switch result{
+            case .success(let response):
+                let dict=response.dictionaryBody
+                if let wlists=dict["list"] as? [Dictionary<String,Any>]{
+                    for wlist in wlists{
+                        let forecast=Forecast(todayForecast: wlist)
+                        print(forecast.date)
+                        print(forecast.highTemp)
+                        print(forecast.lowTemp)
+                        print(forecast.weatherType)
+                        self.forecasts.append(forecast)
+                    }
+                    
+                }
+            case .failure(let response):
+                print(response.error)
+            }
+        })
+    }
+
+    
+    
     
 
     override func didReceiveMemoryWarning() {
