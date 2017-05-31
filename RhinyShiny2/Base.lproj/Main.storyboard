@@ -81,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="300" width="320" height="268"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="mwF-MK-2L0">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="mwF-MK-2L0" customClass="WeatherCell" customModule="RhinyShiny2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mwF-MK-2L0" id="7dU-9s-eBM">
@@ -145,6 +145,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="PId-Bz-RfD" id="wJg-Yt-Qcy"/>
+                                            <outlet property="highTemp" destination="ZHN-db-tVn" id="YYe-fO-3uq"/>
+                                            <outlet property="lowTemp" destination="gKO-BY-c9O" id="oCn-Gh-yfZ"/>
+                                            <outlet property="weatherImg" destination="WII-If-7XL" id="e9m-Tc-ee4"/>
+                                            <outlet property="weatherType" destination="XQa-dV-pUX" id="8om-vB-pgP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

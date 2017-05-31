@@ -44,6 +44,7 @@ class CurrentWeather{
         //let paramets:[String:String]=["lat" : "35", "lon" : "139", "appid" : "526d3a95d91c642ca394af566568a920" ]
         print(CURRENT_WEATHER_URL)
         let networking=Networking(baseURL: CURRENT_WEATHER_URL)
+        networking.headerFields = ["x-api-key": "526d3a95d91c642ca394af566568a920"]
         networking.get("get", completion: {result in
             switch result {
             case .success(let response):
